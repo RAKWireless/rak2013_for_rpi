@@ -15,7 +15,7 @@ step1 : Download and install [Raspbian Stretch or Buster LITE](https://www.raspb
 step2 : Clone the installer and start the installation.
 
       $ sudo apt update; sudo apt install git -y
-      $ https://github.com/RAKWireless/rak2013_for_rpi.git
+      $ git clone https://github.com/RAKWireless/rak2013_for_rpi.git
       $ cd ~/rak2013_for_rpi
       $ sudo ./install.sh
 
