@@ -1,0 +1,12 @@
+#!/bin/bash
+
+SCRIPT_COMMON_FILE=/usr/local/rak/shell_script/rak_common.sh
+source $SCRIPT_COMMON_FILE
+
+systemctl stop serial-getty@ttyAMA0.service
+
+pushd /usr/local/rak/bin
+./active_lte_module.sh
+./ppp.sh &
+popd
+
