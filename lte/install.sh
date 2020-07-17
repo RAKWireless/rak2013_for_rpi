@@ -15,7 +15,8 @@ if [ ! -d "/usr/local/rak/lte" ]; then mkdir "/usr/local/rak/lte" -p ; fi
 
 cp ppp-creator.sh /usr/local/rak/lte/
 cp rak-pppd.service /lib/systemd/system
-
+cp pppd.sh /usr/local/rak/bin/
+cp ppp.sh /usr/local/rak/bin/
 /usr/local/rak/lte/ppp-creator.sh HOLOGRAM ttyAMA0 115200
 echo_success "Install LTE module success!\n"
 sleep 2
